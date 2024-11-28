@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include ('partials/header') %>
+    </head>
+    <body>
+          <div class="w3-container l3 w3-text-grey w3-padding" >
+            <%- include ('partials/nav') %>
+                <div class="w3-row w3-grayscale">
+                    <div class="w3-col l1">
+                        <p></p>
+                    </div>
+                    <div class="w3-col l3">
+                        <h2>About</h2>
+                        <p>The idea for this is have a resources for artists. </p>
+                        <p> If they are feeling stuck they can click a button to get a random Richard Serra verb, ground and material idea to kick start creative investigation.  
+                        </p>
+                    </div>
+
+                    <div class="w3-col l5">
+                        <h2>Get an idea:</h2>
+                        <div class="w3-panel w3-border w3-hover-border-teal">
+                            <% if(message) { %> 
+                                <p><%= message %></p>
+                            <% } %>
+                        </div>
+                        <a href="/create-idea" class="w3-button w3-teal">Ideas!</a>
+                    </div>
+                    <div class="w3-col l">
+                        <p></p>
+                    </div>
+                    <div class="w3-col l3">
+                        <h2>File download</h2>
+                        <a href="/downloadRS" class="w3-button w3-teal">Serra verb pdf download</a>
+                        <br><br>
+                        <a href="/downloadAS" class="w3-button w3-teal">Stillman verb pdf download</a>
+                        <br>
+                        
+                        
+                    </div>
+                </div>
+            <%- include('partials/footer') %>
+          </div>
+  </body>
+</html>
+
+  

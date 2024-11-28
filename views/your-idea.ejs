@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include partials/header %>
+    </head>
+    <body>
+          <div class="w3-container l3 w3-text-grey w3-padding" >
+            <% include partials/nav %>
+               
+                <div class="w3-row ">
+                    <div class="w3-col l1">
+                        <p></p>
+                    </div>
+                    <div class="w3-col l3">
+                        <h2>Idea below and in bar above</h2>
+                        <br>
+                        
+                    </div>
+                    <div class="w3-col l3">
+                        <div class="w3-panel w3-border w3-hover-border-teal">
+                            <% if(message) { %> 
+                                <p><%= message %></p>
+                            <% } %>
+                        </div>
+                        <a href="/create-idea" class="w3-button w3-teal">Ideas!</a>
+                    </div>
+                    <div class="w3-col l3">
+                        
+                    </div>
+                </div>
+            <% include partials/footer %>
+          </div>
+  </body>
+</html>

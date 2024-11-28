@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <%- include ('partials/header') %>
+    </head>
+    <body>
+          <div class="w3-container l3 w3-text-grey w3-padding" >
+            <%- include ('partials/nav') %>
+               
+                <div class="w3-row w3-grayscale">
+                    <div class="w3-col l1">
+                        <p></p>
+                    </div>
+                    <div class="w3-col l3">
+                        <h2>About Page</h2>
+                        <p>The idea for this is have a resources for artists. </p>
+                        <p> If they are feeling stuck they can click a button to get a random Richard Serra verb, ground and material idea to kick start creative investigation.  
+                        </p>
+                        
+                    </div>
+                    <div class="w3-col l3">                        
+                        <h2>Artist List</h2>
+                        <ul>
+                            <% artists.forEach(function(artist) { %>
+                                <li><%= artist.name %> - <%= artist.social_media %></li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                    <div class="w3-col l3">
+                         <h2>&nbsp;</h2>
+                         <ul>
+                            <li>We all Rock</li>
+                            <li>We all Rock</li>
+                            <li>We all Rock</li>
+                        </ul>
+                        <br>
+                         <h3>Just so it's clear!!</h3>
+                         <br>
+                        <a href=" https://www.moma.org/audio/playlist/1/8" target="_blank" class="w3-button w3-teal">video</a>
+                    </div>
+                </div>
+            <%- include ('partials/footer') %>
+          </div>
+  </body>
+</html>
+  
